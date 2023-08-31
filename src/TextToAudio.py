@@ -85,7 +85,7 @@ class TextToAudio():
             result_str = err.read()
             has_error = True
 
-        save_file = "error.txt" if has_error else 'result.' + FORMAT
+        save_file = "error.txt" if has_error else '/mnt/data/video/result.' + FORMAT
         with open(save_file, 'wb') as of:
             of.write(result_str)
 
@@ -95,7 +95,7 @@ class TextToAudio():
             print("tts api  error:" + result_str)
 
         print("result saved as :" + save_file)
-        path = 'C:\\Users\\Administrator\\PycharmProjects\\GenVIdeo\\src\\result.mp3'
+        path = '/mnt/data/video/result.mp3'
         return path
 
     def fetch_token(self):

@@ -43,7 +43,7 @@ class Gen_Video():
         audio_clip = AudioFileClip(mp3path)
         final_video = final_clip.set_audio(audio_clip)
         final_video.write_videofile(
-            str(uuid) + '.mp4',
+            '/mnt/data/video/' + str(uuid) + '.mp4',
             fps=30,
             codec='mpeg4',
             preset='ultrafast',

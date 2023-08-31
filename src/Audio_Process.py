@@ -14,7 +14,7 @@ class Audio_Process():
         pass
     def Audio_Process(self,mp3path,num):
         y, sr = librosa.load(mp3path,sr=None)
-        time = librosa.get_duration(filename='./result.mp3')
+        time = librosa.get_duration(filename=mp3path)
         #tempo, beats = librosa.beat.beat_track(y=y, sr=sr)
         #beat_times = list(librosa.frames_to_time(beats, sr=sr))
         #beat_times.append(beat_times[-1] + 1)
